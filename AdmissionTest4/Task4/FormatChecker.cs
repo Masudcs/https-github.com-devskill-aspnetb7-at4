@@ -10,7 +10,14 @@ namespace Task4
     {
         public bool IsValid(string mobileNumber)
         {
-            throw new NotImplementedException();
+            if(mobileNumber.Length==11 && mobileNumber[0]=='0' && mobileNumber[1] == '1')
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
     }
 }

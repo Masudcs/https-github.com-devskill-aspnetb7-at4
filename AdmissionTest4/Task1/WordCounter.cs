@@ -6,11 +6,16 @@ using System.Threading.Tasks;
 
 namespace Task1
 {
+  
     public class WordCounter
     {
+
+       
         public int Count(string text)
         {
-            throw new NotImplementedException();
+            int count = text.Trim().Split(' ', '$', '#', '@', '.', '(', ',', '?', ')', '{', '}', '[', ']', '$', '%', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0').Length;
+            return count;
         }
+       
     }
 }
